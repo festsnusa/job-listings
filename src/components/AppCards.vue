@@ -3,7 +3,7 @@
     <div v-for="value in arr" :key="value.id" :class="`cards__card ${value.featured ? 'cards__card_featured' : ''}`"
       :id=value.id>
       <div class="cards__left">
-        <img class="cards__image" :src="`src/images/${value.logo}`" alt="logo" />
+        <img class="cards__image" :src="`./images/${value.logo}`" alt="logo" />
         <div class="cards__header">
           <div class="cards__box">
             <p class="cards__title">{{ value.company }}</p>
@@ -58,8 +58,8 @@ export default {
       this.connections.push(requirements)
     })
 
-    // console.log(this.connections)
     this.$emit('fill-connections', this.connections)
+
   }
 }
 </script>
