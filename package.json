@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "pinia": "^2.0.32",
+    "pinia-plugin-persistedstate": "^3.1.0",
     "vue": "^3.2.47",
     "vue-cli-plugin-pug": "^2.0.0",
-    "vue-fragment": "^1.6.0"
+    "vue-fragment": "^1.6.0",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",

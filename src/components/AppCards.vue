@@ -1,38 +1,25 @@
-<template>
-  <div class="cards">
-    <div v-for="value in arr" :key="value.id" :class="`cards__card ${value.featured ? 'cards__card_featured' : ''}`"
-      :id=value.id>
-      <div class="cards__left">
-        <img class="cards__image" :src="`./images/${value.logo}`" alt="logo" />
-        <div class="cards__header">
-          <div class="cards__box">
-            <p class="cards__title">{{ value.company }}</p>
-            <div class="cards__properties">
-              <div class="cards__button cards__button_new" v-show="value.new">new!</div>
-              <div class="cards__button cards__button_featured" v-show="value.featured">featured </div>
-            </div>
-          </div><a class="cards__position" href="#!" aria-label="position">{{ value.position }}</a>
-          <ul class="cards__list">
-            <li class="cards__item">{{ value.postedAt }}</li>
-            <li class="cards__item">{{ value.contract }}</li>
-            <li class="cards__item">{{ value.location }}</li>
-          </ul>
-        </div>
-      </div>
-      <hr />
-      <ul class="cards__footer">
-        <li class="cards__requirement" @click="add(this.connections, value.role)">{{ value.role }}</li>
-        <li class="cards__requirement" @click="add(this.connections, value.level)">{{ value.level }}</li>
-        <li class="cards__requirement" @click="add(this.connections, tool)" v-for="tool in value.tools" :key="tool">{{
-          tool }}
-        </li>
-        <li class="cards__requirement" @click="add(this.connections, language)" v-for="language in value.languages"
-          :key="language">
-          {{ language }}
-        </li>
-      </ul>
-    </div>
-  </div>
+<template lang="pug">
+.cards
+  div(v-for="value in arr" :key="value.id" :class="`cards__card ${value.featured ? 'cards__card_featured' : ''}`" :id="value.id")
+    .cards__left
+      img.cards__image(:src= "value.logo" alt="logo")
+      .cards__header
+        .cards__box
+          p.cards__title {{ value.company }}
+          .cards__properties
+            .cards__button.cards__button_new(v-show="value.new") new!
+            .cards__button.cards__button_featured(v-show="value.featured") featured
+        a.cards__position(href="#!" aria-label="position") {{ value.position }}
+        ul.cards__list
+          li.cards__item {{ value.postedAt }}
+          li.cards__item {{ value.contract }}
+          li.cards__item {{ value.location }}
+    hr
+    ul.cards__footer
+      li.cards__requirement(@click="add(this.connections, value.role)") {{ value.role }}
+      li.cards__requirement(@click="add(this.connections, value.level)") {{ value.level }}
+      li.cards__requirement(@click="add(this.connections, tool)" v-for="tool in value.tools" :key="tool") {{tool }}
+      li.cards__requirement(@click="add(this.connections, language)" v-for="language in value.languages" :key="language") {{ language }}
 </template>
 
 <script>
