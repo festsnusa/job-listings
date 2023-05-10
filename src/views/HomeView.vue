@@ -5,9 +5,9 @@ header.header
     .cards
       .cards__filter(v-show="requirements.length > 0" )
         .cards__filter_box
-          p(v-for="requirement in requirements" :key="requirement").cards__filter_item(@click="deleteItem") {{ requirement }}
+          p.cards__filter_item(v-for="requirement in requirements" :key="requirement" @click="deleteItem") {{ requirement }}
         span.cards__clear(@click="clear") Clear
-      AppCards(:add="add" :arr="arr" @fill-connections="fillConnections")
+      AppCards(:add="add" @fill-connections="fillConnections")
 </template>
 
 <script>
@@ -268,6 +268,47 @@ $cyanDark: hsl(180, 14%, 20%);
     width: 3rem;
     top: -1.5rem;
     left: 1.5rem;
+
+    &_photosnap {
+      content: url('@/images/photosnap.svg');
+    }
+
+    &_manage {
+      content: url('@/images/manage.svg');
+    }
+
+    &_account {
+      content: url('@/images/account.svg');
+    }
+
+    &_myhome {
+      content: url('@/images/myhome.svg');
+    }
+
+    &_loop-studios {
+      content: url('@/images/loop-studios.svg');
+    }
+
+    &_faceit {
+      content: url('@/images/faceit.svg');
+    }
+
+    &_shortly {
+      content: url('@/images/shortly.svg');
+    }
+
+    &_insure {
+      content: url('@/images/insure.svg');
+    }
+
+    &_eyecam-co {
+      content: url('@/images/eyecam-co.svg');
+    }
+
+    &_the-air-filter-company {
+      content: url('@/images/the-air-filter-company.svg');
+    }
+
   }
 
   &__header {

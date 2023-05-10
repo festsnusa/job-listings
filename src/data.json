@@ -2,7 +2,7 @@
   {
     "id": 1,
     "company": "Photosnap",
-    "logo": "./src/images/photosnap.svg",
+    "logo": "photosnap",
     "new": true,
     "featured": true,
     "position": "Senior Frontend Developer",
@@ -17,7 +17,7 @@
   {
     "id": 2,
     "company": "Manage",
-    "logo": "manage.svg",
+    "logo": "manage",
     "new": true,
     "featured": true,
     "position": "Fullstack Developer",
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "company": "Account",
-    "logo": "account.svg",
+    "logo": "account",
     "new": true,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -47,7 +47,7 @@
   {
     "id": 4,
     "company": "MyHome",
-    "logo": "myhome.svg",
+    "logo": "myhome",
     "new": false,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -62,7 +62,7 @@
   {
     "id": 5,
     "company": "Loop Studios",
-    "logo": "loop-studios.svg",
+    "logo": "loop-studios",
     "new": false,
     "featured": false,
     "position": "Software Engineer",
@@ -92,7 +92,7 @@
   {
     "id": 7,
     "company": "Shortly",
-    "logo": "shortly.svg",
+    "logo": "shortly",
     "new": false,
     "featured": false,
     "position": "Junior Developer",
@@ -107,7 +107,7 @@
   {
     "id": 8,
     "company": "Insure",
-    "logo": "insure.svg",
+    "logo": "insure",
     "new": false,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -122,7 +122,7 @@
   {
     "id": 9,
     "company": "Eyecam Co.",
-    "logo": "eyecam-co.svg",
+    "logo": "eyecam-co",
     "new": false,
     "featured": false,
     "position": "Full Stack Engineer",
@@ -137,7 +137,7 @@
   {
     "id": 10,
     "company": "The Air Filter Company",
-    "logo": "the-air-filter-company.svg",
+    "logo": "the-air-filter-company",
     "new": false,
     "featured": false,
     "position": "Front-end Dev",

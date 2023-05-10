@@ -2,7 +2,7 @@
 .cards
   div(v-for="value in arr" :key="value.id" :class="`cards__card ${value.featured ? 'cards__card_featured' : ''}`" :id="value.id")
     .cards__left
-      img.cards__image(:src= "value.logo" alt="logo")
+      img.cards__image(alt="logo" :class="`cards__image_${value.logo}`")
       .cards__header
         .cards__box
           p.cards__title {{ value.company }}
